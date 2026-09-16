@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fancy Text Generator – Stylish Unicode Text for Social Media</title>
+  <meta name="description" content="Generate fancy Unicode text for Instagram, TikTok, WhatsApp, Discord and gaming. Create stylish text instantly and copy it with one click.">
+  <meta name="keywords" content="fancy text generator, stylish text, unicode text, instagram fonts, discord text generator, cool fonts copy and paste">
+  <meta name="author" content="Fancy Text Generator">
+  <link rel="canonical" href="https://fancytextgenerator.com/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fancytextgenerator.com/">
+  <meta property="og:title" content="Fancy Text Generator – Stylish Unicode Text for Social Media">
+  <meta property="og:description" content="Generate fancy Unicode text for Instagram, TikTok, WhatsApp, Discord and gaming. Create stylish text instantly and copy it with one click.">
+  <meta property="og:image" content="https://fancytextgenerator.com/og-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://fancytextgenerator.com/">
+  <meta name="twitter:title" content="Fancy Text Generator – Stylish Unicode Text for Social Media">
+  <meta name="twitter:description" content="Generate fancy Unicode text for Instagram, TikTok, WhatsApp, Discord and gaming. Create stylish text instantly and copy it with one click.">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://fancytextgenerator.com/#website",
+        "url": "https://fancytextgenerator.com/",
+        "name": "Fancy Text Generator",
+        "description": "Free online fancy text generator and Unicode font styling tool."
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://fancytextgenerator.com/#webapp",
+        "url": "https://fancytextgenerator.com/",
+        "name": "Fancy Text Generator",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All",
+        "browserRequirements": "Requires JavaScript",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">𝔉</div>
+        <span>Fancy Text Generator</span>
+      </a>
+      
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="text-styles.html">Text Styles</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme">☀️</button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Generator Section -->
+  <main class="container">
+    <section class="hero">
+      <span class="badge">✨ Free 100% Instant Copy & Paste Tool</span>
+      <h1><span class="gradient-text">Fancy Text Generator</span> – Stylish Unicode Text for Social Media</h1>
+      <p class="hero-subtitle">Transform your normal plain text into 18+ cool, stylish Unicode font styles for Instagram bios, TikTok captions, Discord handles, and gaming nicknames.</p>
+    </section>
+
+    <!-- Generator Interface -->
+    <section class="generator-card" id="generator">
+      <div class="input-header">
+        <label for="textInput" class="input-label">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+          Type or Paste Your Text Below:
+        </label>
+        <span class="char-counter" id="charCounter">0 characters</span>
+      </div>
+
+      <div class="text-input-wrapper">
+        <textarea id="textInput" class="text-input" placeholder="Type your text here (e.g., Fancy Text Generator)..." aria-label="Input text to convert to fancy styles"></textarea>
+        <button class="clear-btn" id="clearBtn" title="Clear input text">✕</button>
+      </div>
+
+      <!-- Quick Text Modifiers -->
+      <div class="quick-tools">
+        <button class="tool-btn" data-action="upper">UPPERCASE</button>
+        <button class="tool-btn" data-action="lower">lowercase</button>
+        <button class="tool-btn" data-action="title">Title Case</button>
+        <button class="tool-btn" data-action="reverse">esreveR</button>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="filter-bar">
+        <button class="filter-chip active" data-category="all">All Styles</button>
+        <button class="filter-chip" data-category="bold">Bold</button>
+        <button class="filter-chip" data-category="italic">Italic</button>
+        <button class="filter-chip" data-category="script">Script / Cursive</button>
+        <button class="filter-chip" data-category="gothic">Gothic / Fraktur</button>
+        <button class="filter-chip" data-category="decorative">Decorative</button>
+        <button class="filter-chip" data-category="fancy">Fancy & Vaporwave</button>
+      </div>
+
+      <!-- Live Generated Output Grid -->
+      <div class="results-grid" id="resultsGrid">
+        <!-- Dynamically rendered by JavaScript -->
+      </div>
+    </section>
+
+    <!-- Comprehensive Content Section for SEO & Guidance -->
+    <article class="content-section">
+      <div class="content-box">
+        <h2>What is Unicode Text & How Does Fancy Text Work?</h2>
+        <p>When you type text using our Fancy Text Generator, you might wonder how standard characters turn into mathematical symbols, cursive scripts, and double-struck outlines without changing system fonts. The secret lies in standard <strong>Unicode specification</strong>.</p>
+        <p>Unicode is a universal character encoding standard that assigns a unique number to every character, symbol, and emoji across different languages and technical domains. Rather than changing CSS font-family rules (which don't transfer when copied to external apps), our tool maps standard ASCII characters (A-Z, a-z, 0-9) to special Unicode character glyphs stored in blocks such as <em>Mathematical Alphanumeric Symbols</em>, <em>Enclosed Alphanumerics</em>, and <em>Letterlike Symbols</em>.</p>
+
+        <h3>Where Can You Use Fancy Unicode Text?</h3>
+        <p>Because Unicode characters are recognized globally across operating systems and web browsers, you can copy and paste your stylish text directly into:</p>
+        <ul>
+          <li><strong>Instagram:</strong> Bio details, post captions, stories, and highlight titles.</li>
+          <li><strong>TikTok & Shorts:</strong> Display names, profile descriptions, and video overlays.</li>
+          <li><strong>Discord & Gaming:</strong> User nicknames in Guilds, Steam profiles, PUBG, Free Fire, and Fortnite handles.</li>
+          <li><strong>WhatsApp & Telegram:</strong> Status updates, channel announcements, and group names.</li>
+          <li><strong>Twitter (X) & Facebook:</strong> Tweet headlines, page posts, and custom user names.</li>
+        </ul>
+
+        <h3>Platform Compatibility & Best Practices</h3>
+        <p>While over 99% of modern smartphones (iOS, Android) and computer operating systems (Windows, macOS, Linux) support Unicode characters natively, a few older devices or specific apps might render certain symbols as blank boxes (known as "tofu" 𝕏). To ensure maximum readability:</p>
+        <ol>
+          <li>Use <strong>Bold</strong> or <strong>Small Caps</strong> for main headers or usernames for clean legibility.</li>
+          <li>Use <strong>Cursive / Script</strong> for romantic, artistic, or personal blog descriptions.</li>
+          <li>Avoid overusing heavy symbols in long paragraphs to ensure screen-reader accessibility.</li>
+        </ol>
+
+        <!-- More Text Style Tools & Resources (SEO Requirement) -->
+        <div class="resource-box">
+          <h3>More Text Style Tools & Resources</h3>
+          <p>Looking for regional font converters or international typography guides? Explore specialized text styling tools including <a href="https://yazistilleripro.com.tr/" class="resource-link" target="_blank" rel="noopener">Turkish Text Styles</a> for localized Unicode generation, accent support, and custom social media lettering.</p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="alert" aria-live="assertive">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span class="toast-msg">Copied to clipboard!</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">𝔉</div>
+            <span>Fancy Text Generator</span>
+          </a>
+          <p>Create stylish Unicode text for Instagram bios, TikTok captions, Discord names, and gaming nicknames instantly.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="text-styles.html">Text Styles</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Popular Styles</h4>
+          <ul class="footer-links">
+            <li><a href="text-styles.html#bold">Bold Text Generator</a></li>
+            <li><a href="text-styles.html#script">Cursive Script</a></li>
+            <li><a href="text-styles.html#gothic">Fraktur Gothic</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fancy Text Generator. All rights reserved. Free online Unicode tool.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/unicode-converter.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
